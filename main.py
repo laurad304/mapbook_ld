@@ -1,12 +1,9 @@
-users:list[dict] =[
-    {'name': 'Laura', 'location': 'Łuków', 'post': 500, },
-    {'name': 'Wika', 'location': 'Radzyń Podlaski', 'post': 450, },
-    {'name': 'Daria', 'location': 'Łosice', 'post': 300, }
-]
+from utills.controller import get_user_info
+from utills.model import users
 
 
-def get_user_info (users_data:list[dict])->None:
-    for user in users_data:
-        print(f'Twój znajomy: {user["name"]} z miejscowości {user["location"]} opublikował {user["post"]} postów')
+def main():
+    get_user_info(users)
 
-get_user_info(users)
+if __name__ == '__main__':
+    main()
