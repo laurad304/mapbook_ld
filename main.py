@@ -8,7 +8,7 @@ def main():
         print('0 - Exit')
         print('1 - Get user info')
         print('2 - Add user')
-        print('3 - Add user')
+        print('3 - Remove user')
         print('4 - Update user')
         print('========================')
 
